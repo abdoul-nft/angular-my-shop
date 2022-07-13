@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PanierComponent } from './navbar/panier/panier.component';
 import { ProduitComponent } from './main/produit/produit.component';
 import { HeaderComponent } from './header/header.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule // Très important d'importer ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
