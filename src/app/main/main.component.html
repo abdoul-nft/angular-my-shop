@@ -1,0 +1,8 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <!-- Ici ma liste de produit avec un boucle *ngFor -->
+            <app-produit *ngFor="let produit of arrayProducts; let index = index" [id]="index" [title]="produit.title" [type]="produit.type" [f_price]="produit.f_price" [price]="produit.price" [image]="produit.image" [rates]="produit.rates" [sale]="produit.sale"></app-produit>
+        </div>
+    </div>
+</section>
