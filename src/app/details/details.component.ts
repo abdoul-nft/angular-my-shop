@@ -18,4 +18,8 @@ export class DetailsComponent implements OnInit {
     this.product = this.pService.getProductById(id)
   }
 
+  ajouterAuPanier() {
+    this.pService.addToCard()
+  }
+
 }
